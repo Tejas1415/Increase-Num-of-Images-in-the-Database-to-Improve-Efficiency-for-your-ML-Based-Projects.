@@ -3,7 +3,7 @@
 
 
 
-# creare a function
+% creare a function
 function [ images ] = Rsize( directory )
 data = cd(directory);          % Here paste your link to the directory/ else it will access your current folder linked in MATLAB
 
