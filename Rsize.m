@@ -7,7 +7,8 @@
 function [ images ] = Rsize( directory )
 data = cd(directory);          % Here paste your link to the directory/ else it will access your current folder linked in MATLAB
 
-imagefiles = dir('*.tiff');    % read all the .tiff images, change to .jpg if all images in ur folder are in .jpg format
+%imagefiles = dir(fullfile(data, '*.tiff');
+imagefiles = dir(data, '*.tiff');    % read all the .tiff images, change to .jpg if all images in ur folder are in .jpg format
 nfiles = length(imagefiles);   % Num of images in ur folder, loop that many times.
 for ii=1:nfiles
    currentfilename = imagefiles(ii).name;  % ii is each image.
